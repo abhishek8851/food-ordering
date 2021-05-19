@@ -1,0 +1,234 @@
+/* CSS RESET  */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+#logo{
+    margin: 3px;
+
+}
+
+#logo img{
+    height: 60px;
+    margin: 0px 16px
+}
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navbar::before{
+    content:" ";
+    background-color:rgb(255, 136, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* HOME SECTION */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/fruits.jpg);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Orelega One', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Orelega One', cursive;
+}
+
+/* SELECTION SECTION */
+#services{
+    margin: 30px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(155, 43, 43);
+    margin: 8px;
+    padding: 10px;
+    border-radius: 22px;
+    background-color: #e1d7d1;
+}
+
+
+#services .box img{
+    /* border: 2px solid brown; */
+    height: 140px;
+    /* width: 130px; */
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Orelega One', cursive;
+    font-size: 1rem;
+
+}
+
+
+/* CLIENT SECTION */
+
+#client-section{
+    position:relative;
+    height: 300px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/salad.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 30px;
+}
+
+#clients img{
+    height: 100px;
+}
+
+/* CONTACT SECTION */
+
+  #contact{
+position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 411px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(../img/contact1.jpg) no-repeat center center/cover;
+
+}
+
+#contact-box{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 0.2rem
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.1rem;
+    border-radius: 7px;
+    font-size: 0.8rem;
+} 
+
+ #contact-box form{
+
+width: 50%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Orelega One', cursive;
+}
+footer{
+     background-color: black;
+    color: white;
+    padding: 8px 30px;
+}
+
+
+
+
+
+
+/* UTILITY CLASSES */
+.h-primary{
+    font-family: 'Orelega One', cursive;
+    font-size: 3rem;
+    padding: 10px;
+}
+.h-secondary{
+    font-family: 'Orelega One', cursive;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+.btn{
+    padding: 5px 20px;
+    border: 2px solid #c46464;
+    background-color: #b3b66a;
+    color: white;
+    margin: 22px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
